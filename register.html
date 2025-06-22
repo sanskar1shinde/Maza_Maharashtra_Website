@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <title>Maharashtra</title>
+    </head>
+<body>
+
+
+    
+    <div class="reg">
+        <div class="back1 animate_animated animate__fadeInLeft" style="visibility: visible; animation-duration: 2s; animation-name:fadeInLeft">
+            <h1>LET'S GET <br>STARTED!!</h1>
+        </div>
+        <img src="image/goa1.jpg" alt="">
+    </div>
+    
+    <div class="form1">
+          <div class="carA">
+            <img src="image/car.gif" class="gifA">
+            <img src="image/car.gif" class="gifB">
+            <img src="image/car.gif" class="gifC">
+            <img src="image/car.gif" class="gifD">
+        </div>
+        
+        <img src="https://wallpaperaccess.com/full/2314983.jpg" alt="">
+        <div class="inside1">
+            <h1>REGISTER</h1>
+            <div class="data1">
+            <form action="insert.php" method="post">
+                <h2>Name</h2>
+                <div class="username">
+                    <input type="text" name="cname" id="" pattern="[a-z A-Z]*" title="Enter Text">
+                </div>
+                <h2>Username</h2>
+                <div class="username">
+                    <input type="text" name="username" id="" required>
+                </div>    
+                <h2>Password</h2>
+                <div class="password1">
+                    <input type="password" name="password" id="" required>
+                </div>
+
+                <h2>Phone No</h2>
+                <div class="username">
+                    <input type="text" name="phone" id=""  title="Enter Text" required pattern="[0-9]*">
+                </div>
+
+                <h2>Email</h2>
+                <input type="email" id="email" name="mail" placeholder="Enter Email..." required>
+            
+                <div class="otpverify">
+                    <input type="text" id="otp_inp" placeholder="Enter the OTP sent to your Email...">
+                    <button type="submit" id="otp-btn" class="otpbtn">Verify</button>
+                </div>
+            </form>
+             <div class="btn3">
+                    <script src="js/index.js"></script>
+                    <button onclick="sendOTP()" type="button" >Register<img src="image/arrow.png"></img></button>
+                  <button type="button"><a href="user.html">Back<img src="image/arrow.png"></img></a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
